@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Descripción del la img"
+            android:scaleType="fitXY"
+            android:src="@drawable/fondo" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@color/dark_blue">
+
+        </ImageView>
+        <Button
+            android:id="@+id/txtView_j2"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="215dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_rounded"
+            android:contentDescription="descripción!"
+            android:fontFamily="@font/actor"
+            android:padding="8dp"
+            android:text="Jugador 2: 0"
+            android:textColor="#031933"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </Button>
+
+        <Button
+            android:id="@+id/txtView_j1"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_rounded"
+            android:contentDescription="descripción!"
+            android:fontFamily="@font/actor"
+            android:padding="8dp"
+            android:text="Jugador 1: 0"
+            android:textColor="#031933"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.738"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="NotSibling">
+
+        </Button>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="142dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:background="@color/dark_blue"
+            android:fontFamily="@font/bungee"
+            android:paddingLeft="25dp"
+            android:paddingTop="3dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="18dp"
+            android:text="EMPAREJA LOS MUPPETS"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+
+        <include
+            layout="@layout/cards"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="270dp"
+            android:layout_marginBottom="100dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/ibJuego"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="300dp"
+            android:backgroundTint="@color/design_default_color_surface"
+            android:contentDescription="descripción!"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/baseline_announcement_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.738"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="NotSibling">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+    </FrameLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/design_default_color_surface"
+        android:contentDescription="boton_para_subir_vol"
+        android:onClick="habilitarBGMusic"
+        android:src="@drawable/baseline_volume_up_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#FA0000"
+        app:tint="@android:color/darker_gray"
+        tools:ignore="NotSibling">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
